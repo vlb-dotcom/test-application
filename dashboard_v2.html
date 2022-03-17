@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/dashboard_v2.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo-satellyte"> <img> </div>
+            <img class="logo-img icon" src="stock/satellyte-logo.png" alt="Circle">
+            <!-- <i class='bx bxl-c-plus-plus icon'></i> -->
+            <div class="logo_name">Satellyte</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#" class="btn_dashboard">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+
+            <!-- <div class="label-workspace">
+                <label class="label-item">Workspace</label>
+            </div> -->
+
+            <li>
+                <a href="#" class="btn_newconn">
+                    <!-- <i class='bx bx-user'></i> -->
+                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    <span class="links_name">New Connection</span>
+                </a>
+                <span class="tooltip">New Connection</span>
+            </li>
+            <li>
+                <a href="#" class="btn_model">
+                    <!-- <i class='bx bx-pie-chart-alt-2'></i> -->
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <span class="links_name">Field Template</span>
+                </a>
+                <span class="tooltip">Field Template</span>
+            </li>
+
+            <!-- <div class="label-general">
+                <label class="label-item">General</label>
+            </div> -->
+
+            <li>
+                <a href="#" class="btn_management">
+                    <!-- <i class='bx bx-pie-chart-alt-2'></i> -->
+                    <i class="fa fa-address-book" aria-hidden="true"></i>
+                    <span class="links_name">Management</span>
+                </a>
+                <span class="tooltip">Management</span>
+            </li>
+            <li>
+                <a href="#" class="btn_settings">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="stock/lebron-james.png" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Lebron James</div>
+                        <div class="job">Developer</div>
+                    </div>
+                </div>
+
+                <i class='bx bx-log-out' id="log_out"></i>
+                <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <!-- Dashboard Section -->
+        <div class="dashboard-section visible">
+            <div class="text text-dashboard">Dashboard</div>
+            <hr class="dashboard-linebreak">
+            <div class="dashboard-tool-display">
+                <div class=" dashboard-display-integrations">
+                    <p class="dashboard-text-display">Total Integrations</p>
+                    <div class="box-display dasboard-number-display">2</div>
+                </div>
+                <div class="dashboard-display-available">
+                    <p class="dashboard-text-display">Tools Available</p>
+                    <div class="box-display dasboard-number-display">3</div>
+                </div>
+            </div>
+            <div class="dashboard-text-display-integrations">
+                <p>Integrations</p>
+                <div class="integration-display-data">
+                    <div class="integration-display-data-menu">
+                        <ul class="integration-display-data-menu-ul">
+                            <li class="item-menu-settings">NO. <i class="fa fa-sort" aria-hidden="true"></i></li>
+                            <li class="item-menu-settings">Actions</li>
+                            <li class="item-menu-settings">Name <i class="fa fa-sort" aria-hidden="true"></i></li>
+                            <li class="item-menu-settings">Owner <i class="fa fa-sort" aria-hidden="true"></i></li>
+                            <li class="item-menu-settings">Tools Connected</li>
+                            <li class="item-menu-settings">Status <i class="fa fa-sort" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="integration-display-items">
+                        <!-- LIST OF INTEGRATIONS -->
+                        <div class="integration-item">
+                            <div class="integration-item-section item-number">1</div>
+                            <div class="integration-item-section item-actions"><i class="fa fa-play-circle fa-circle-1"
+                                    aria-hidden="true"></i> <i class="fa fa-stop-circle fa-stop-1"
+                                    aria-hidden="true"></i> <i class="fa fa-pause fa-pause-1" aria-hidden="true"></i><i
+                                    class="fa fa-trash" aria-hidden="true"></i></div>
+                            <div class="integration-item-section item-name">Test Bug Integration</div>
+                            <div class="integration-item-section item-owner">Lebron James</div>
+                            <div class="integration-item-section item-direction">Jira <i class="fa fa-exchange"
+                                    aria-hidden="true"></i> Gims</div>
+                            <div class="integration-item-section item-status">Active <i class="fa fa-check-circle-o"
+                                    aria-hidden="true"></i></div>
+                        </div>
+                        <div class="integration-item">
+                            <div class="integration-item-section item-number">2</div>
+                            <div class="integration-item-section item-actions"><i class="fa fa-play-circle fa-circle-2"
+                                    aria-hidden="true"></i> <i class="fa fa-stop-circle fa-stop-2"
+                                    aria-hidden="true"></i> <i class="fa fa-pause fa-pause-2" aria-hidden="true"></i><i
+                                    class="fa fa-trash" aria-hidden="true"></i></div>
+                            <div class="integration-item-section item-name">Gim Issue Integration</div>
+                            <div class="integration-item-section item-owner">Lebron James</div>
+                            <div class="integration-item-section item-direction">Gims <i class="fa fa-long-arrow-right"
+                                    aria-hidden="true"></i> Jira</div>
+                            <div class="integration-item-section item-status">Error <i class="fa fa-exclamation-circle"
+                                    aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Connection Section -->
+        <div class="new-collection-section hidden">
+            <div class="text text-new-collection">New Connection</div>
+            <hr class="dashboard-linebreak">
+            <div class="new-collection-data">
+                <p class="new-collection-instruction-text">Select the parent tool that will be integrated:</p>
+                <div class="tool-box-display">
+                    <div class="tool-box tool-jira"><img class="tool-logo" src="stock/jira-new.png" alt="jira logo">
+                    </div>
+                    <div class="tool-box tool-gim">GIM</div>
+                    <div class="tool-box tool-eevp">EEVP</div>
+                </div>
+            </div>
+
+            <div class="progress-display">
+                <!-- Progress Bar -->
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 20%"
+                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">20%</div>
+                </div>
+                <!-- Next Process Btn -->
+                <div class="progress-nxt-btn">Continue <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Field Template Section -->
+        <div class="model-class-section hidden">
+            <div class="text text-model-class">Field Template Configuration</div>
+            <hr class="dashboard-linebreak">
+            <div class="template-main">
+                <div class="field-template-container">
+                    <p class="field-template-instruction-text">Create field templates:</p>
+                    <div class="field-template-actions">
+                        <p class="text-template-lists">Template Lists</p>
+                        <div class="template-list-header">Name <i class="fa fa-sort" aria-hidden="true"></i></div>
+                        <div class="template-list-items">
+                            <!-- BUG TEMPLATE ITEM -->
+                            <div class="template-item">
+                                <p>JIRA Test Bug Template</p>
+                                <div class="template-action-btns">
+                                    <i class="fa fa-pencil-square-o fa-field-template" aria-hidden="true"></i>
+                                    <i class="fa fa-trash fa-field-template" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="template-item">
+                                <p>Test GIM Template</p>
+                                <div class="template-action-btns">
+                                    <i class="fa fa-pencil-square-o fa-field-template" aria-hidden="true"></i>
+                                    <i class="fa fa-trash fa-field-template" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="template-item">
+                                <p>Issue EEVP Template</p>
+                                <div class="template-action-btns">
+                                    <i class="fa fa-pencil-square-o fa-field-template" aria-hidden="true"></i>
+                                    <i class="fa fa-trash fa-field-template" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-create-field-template">
+                            <p>Create field template</p>
+                            <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="create-template-container">
+                    <!-- <h1>TEST</h1> -->
+                    <p>Fill all required fields</p>
+                    <div class="template-input-fields">
+                        <input type="text" class="field-temp-name" id="template-name" name="template-name" placeholder="Template Name" required>
+                        <div class="input-other-fields">
+                            <div class="column-fields">
+                                <p>Field Name</p>
+                                <input type="text" class="input-field-temp field-name-input" id="field-name-input" name="field-name-input" placeholder="Field name" required >
+                            </div>
+                            <div class="column-fields">
+                                <p>Type</p>
+                                <select>
+                                    <option value="string">String</option>
+                                    <option value="integer">Integer</option>
+                                    <option value="double">Double</option>
+                                    <option value="float">Float</option>
+                                    <option value="long">Long</option>
+                                </select>
+                            </div>
+                            <div class="column-fields">
+                                <p>Value</p>
+                                <input type="text" class="input-field-temp field-value-input" id="field-value-input" name="field-value-input" placeholder="Value" >
+                            </div>
+                            <div class="column-fields"></div>
+                            <div class="column-fields"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Management Section -->
+        <div class="management-section hidden">
+            <div class="text text-management">Management</div>
+            <hr class="dashboard-linebreak">
+        </div>
+
+        <!-- Setting Section -->
+        <div class="setting-section hidden">
+            <div class="text text-setting">Settings</div>
+            <hr class="dashboard-linebreak">
+        </div>
+
+    </section>
+
+
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- JS SCRIPTING -->
+    <!-- <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();//calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+            }
+        }
+    </script> -->
+
+</body>
+
+</html>
